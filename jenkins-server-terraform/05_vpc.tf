@@ -29,7 +29,7 @@ resource "aws_subnet" "public-subnet" {
   cidr_block = "10.0.1.0/24"
   
   # Availability zone where the subnet will be located
-  availability_zone = "us-west-2a"
+  availability_zone = "ap-south-1a"
   
   # Automatically assign public IPs to instances launched in this subnet
   map_public_ip_on_launch = true
