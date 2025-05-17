@@ -10,9 +10,10 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - http:
+    - host: k8s-threetie-backend-d6553a0450-803797341.ap-south-1.elb.amazonaws.com  # Use your backend ALB DNS here
+      http:
         paths:
-          - path: /api
+          - path: /api/*
             pathType: Prefix
             backend:
               service:
